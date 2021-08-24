@@ -1,0 +1,111 @@
+.header-area{
+  background-size: cover;
+  height: 100vh;
+  .content{
+    text-align: right;
+    h2{
+      color: #fff;
+      a{
+        text-decoration: none
+      ;
+      }
+    }
+
+  }
+  .stick-nav{
+    background-color: #000000D5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+   display: none;
+    height: 100%;
+    .close-btn{
+      position: absolute;
+      top: 3px;
+      left: 13px;
+      a{
+        font-size: 25px;
+        color: #fff;
+      }
+    }
+    .nav-area{
+      .icon{
+        width: 100px;
+        height: auto;
+      }
+      li{
+        padding: 10px 0;
+      }
+      a{
+        position: relative;
+        color: #fff;
+        transition: 0.3s all ease-in;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Alata', sans-serif;
+        &:hover{
+          color: #6979F8;
+
+        }
+
+        &::after{
+          content: '';
+          position: absolute;
+          top:50%;
+          bottom: 50%;
+          right: 0;
+          height: 8px;
+          width: 8px;
+          border-radius: 20px;
+          background-color: #6979F8;
+          opacity: 0;
+          transition: 0.3s all ease-in;
+        }
+        &:hover::after{
+          opacity: 1;
+        }
+      }
+    }
+    .social-icon{
+      padding: 15px 0;
+      ul{
+        li{
+          border:1px solid #fff;
+          text-align: center;
+          height: 40px;
+          width: 40px;
+          border-radius: 50px;
+          margin:0 5px;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.2s all;
+        }
+        a{
+          padding: 0;
+          font-size: 18px;
+          color: #ffffff;
+          transition: 0.1s all ease-in;
+          &:hover{
+            color: #04F7F3;
+              margin-left: 9px;
+              margin-top: 4px;
+              font-size: 23px;
+
+          }
+        }
+      }
+    }
+  }
+  .icon-bar{
+    height: auto;
+    width: 20px;
+  }
+  .logo-area{
+    img{
+      height: auto;
+      width: 100px;
+    }
+  }
+}
